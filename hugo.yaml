@@ -187,7 +187,7 @@ params:
         info:
           enable: false
         featuredLink:
-          enable: true
+          enable: false
           url: "https://example.com"
         content: |
           - IT security audits of network environments, IT architectures, and applications
