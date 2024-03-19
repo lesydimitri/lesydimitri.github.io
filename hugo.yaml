@@ -127,7 +127,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/Dimitri_Lesy.jpg"
+    image: "/images/Dimitri_Lesy.jpeg"
     content: |-
       I'm a [Penetration Tester](https://en.wikipedia.org/wiki/Penetration_test) living in Austria 🇦🇹 (the one with the schnitzels, not the kangaroos).
 
