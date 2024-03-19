@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Biotime on CodingKoala&#39;s Space</title>
+    <link>http://localhost:1313/tags/biotime/</link>
+    <description>Recent content in Biotime on CodingKoala&#39;s Space</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 05 Nov 2022 11:00:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/biotime/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ZKTeco BioTime Missing Authentication</title>
+      <link>http://localhost:1313/posts/cve202230515/</link>
+      <pubDate>Sat, 05 Nov 2022 11:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/cve202230515/</guid>
+      <description>During a recent penetration test, I stumbled upon an instance of the ZKTeco BioTime web application. This application was linked to a time punch clock taking pictures of employees. The management can then analyse these pictures through the web application or an app.&#xA;Through some directory fuzzing, I discovered the world-readable directories /files/photo and /files/biophoto. These directories contained the aforementioned pictures, which were viewable without authenticating to the web app. Since the filename structure used in the web application was incremental, brute-forcing all images present was trivial.</description>
+    </item>
+  </channel>
+</rss>

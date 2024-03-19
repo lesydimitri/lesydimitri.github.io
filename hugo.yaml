@@ -1,0 +1,331 @@
+baseURL: https://codingkoala.eu
+languageCode: en-gb
+title: CodingKoala's Space
+
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+googleAnalytics: G-T2P2G7M0YK
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /posts
+      weight: 1
+
+params:
+  title: "CodingKoala's Space"
+  description: IT Security Ramblings
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/images/favicon.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+  
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    defaultTheme: "dark"
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Dimitri."
+    subtitle: "I hack stuff."
+    content: "A passionate IT security consultant. Trying to make the world a safer place through identification and eductation."
+    image: /images/dimitri.png
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: false
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/lesydimitri
+        - icon: fab fa-x-twitter
+          url: https://twitter.com/_CodingKoala_
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/Dimitri_Lesy.jpg"
+    content: |-
+      I'm a [Penetration Tester](https://en.wikipedia.org/wiki/Penetration_test) living in Austria 🇦🇹 (the one with the schnitzels, not the kangeroos).
+
+      This blog serves as a platform for me to publish security advisories and tech-related stuff I think might help others.
+    skills:
+      enable: false
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "HTML"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Technology Architect"
+        company: "BearingPoint"
+        companyUrl: "https://bearingpoint.com"
+        date: "October 2023 - present"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        content: |
+          I tackle complex IT security challenges on a daily basis, where I aim to find the correct balance between security and usability.
+
+          My job entails:
+          - The development of Offensive Security tooling
+          - IT security reviews of complex architectures
+          - Cybersecurity Transformations - Helping the client set up a comprehensive IT security program
+          - User awareness training
+          - Managing the Offensive Security Team
+          - Tracking project delivery
+      - job: "Senior Consultant"
+        company: "EY"
+        companyUrl: "https://ey.com/at"
+        date: "April 2021 - October 2024"
+        featuredLink:
+          enable: false
+          url: ""
+        info:
+          enable: true
+          content: ""
+        content: |
+          - IT Security Audits of network environments, IT architectures, and applications
+          - Penetration tests of network environments, web applications, and complex systems
+          - Conducting IT security workshops
+          - Serving clients from various industries, including power suppliers and transportation companies
+          - Continuously developing and maintaining in-house documentation tools for the Offensive Security team
+          - Implementing exploits in the form of scripts, programs, and proof-of-concepts
+          - Supervising interns and new joiners
+          - Training coordinator for the Penetration Testing Team
+      - job: "IT Security Consultant"
+        company: "Thinking Objects GmbH"
+        companyUrl: "https://to.com"
+        date: "May 2018 - February 2021"
+        info:
+          enable: false
+        featuredLink:
+          enable: true
+          url: "https://example.com"
+        content: |
+          - IT security audits of network environments, IT architectures, and applications
+          - Penetration tests of network environments and web applications
+          - Clients from various industries, including banks, pharmaceutical companies, and food manufacturers
+          - Assisting in the establishment and operation of a Managed Vulnerability Scanning service.
+      - job: "IT Technician"
+        company: "SmartGroup bvba"
+        companyUrl: "https://smartgroup.be"
+        date: "September 2013 - September 2017"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |
+          - Computer and mobile device repairs
+          - Customer IT support
+          - Company design
+      - job: "IT Support"
+        company: "AZ Alma"
+        companyUrl: "https://example.com"
+        date: "Summer 2010 Summer 2011"
+        featuredLink:
+          enable: false
+          url: ""
+        content: |
+          - Imaging hospital workstations via PXE
+          - Configuration and deployment of employee workstations
+          - First-Level IT-Support
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Bachelor of Science in Computer Science"
+        school:
+          name: "Hogeschool West-Vlaanderen (Howest) Brugge"
+          url: "https://howest.be"
+        date: "2014 - 2017"
+        content: |-
+          I hold a degree in Computer Science with a specialization in IT security. My coursework covered a wide range of topics, including:
+
+          - Databases: Understanding data storage and retrieval.
+          - Software Development: Crafting efficient and secure code.
+          - E-Business: Exploring the intersection of technology and business.
+          - Web Application Security: Safeguarding web applications from threats.
+          - Windows & Linux Server Security: Setting up and hardening hosted environments.
+          - Computer Crime (Law Basics): Navigating legal aspects of cybersecurity.
+          - Web Development: Building user-friendly interfaces.
+          - Information Modeling: Structuring data effectively.
+          - Mathematics (Cryptography, Statistics): Figuring out why rolling your own crypto is a bad idea.
+          - Cloud Computing (VMware): Leveraging virtualisation platforms.
+          - IT Forensics: Investigating digital incidents.
+          - Penetration Testing: Identifying vulnerabilities.
+          - IT Governance (COBIT 5, ISO27001): Implementing industry practices.
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: true
+    title: "Certifications"
+    items:
+      - title: Offensive Security Certified Professional (OSCP)
+        content: February 2019 - present
+        url: https://www.credly.com/badges/7b8ebb13-97ec-4c0b-afcc-a6bb03cb1890/linked_in_profile
+        image: /images/certifications/offsec.jpeg
+
+  # projects
+  projects:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: 
+        content: 
+        image: 
+        featured:
+          name: 
+          link: 
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fa fa-envelope
+            url: 
+          - icon: fab fa-github
+            url: https://github.com/
+          - icon: fab fa-twitter
+            url: https://twitter.com/
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: Looking to connect?
+    btnName: Hit me up!
+    btnLink: mailto:lesy.dimitri@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "posts"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
