@@ -105,7 +105,7 @@ params:
     intro: "Hi, my name is"
     title: "Dimitri."
     subtitle: "I hack stuff."
-    content: "A passionate IT security consultant. Trying to make the world a safer place through identification and eductation."
+    content: "A passionate IT security consultant. Trying to make the world a safer place through identification and education."
     image: /images/dimitri.png
     bottomImage:
       enable: true
