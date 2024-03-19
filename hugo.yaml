@@ -1,4 +1,5 @@
 baseURL: https://codingkoala.eu
+disablePathToLower: true
 languageCode: en-gb
 title: CodingKoala's Space
 
