@@ -64,6 +64,14 @@
           </aside>
           {{end}}
 
+          {{ if .Site.Params.kofi.enable | default true }}
+          <aside class="kofi">
+            <h5>{{ .Site.Params.terms.support | default "Support Me" }}</h5>
+            <p>Did this help you in any way?</p>
+            <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a coffee', '{{.Site.Params.color.primaryColor}}', 'X8X4W2FP1');kofiwidget2.draw();</script> 
+          </aside>
+          {{end}}
+
           {{ if .Params.socialShare | default true }}
           <aside class="social">
             <h5>{{ .Site.Params.terms.social | default "Social" }}</h5>

@@ -3,6 +3,9 @@ disablePathToLower: true
 languageCode: en-gb
 title: CodingKoala's Space
 
+kofi:
+  enable: true
+
 theme: hugo-profile
 
 outputs:
@@ -65,21 +68,22 @@ params:
     textAlign: left # default: left
 
   # color preference
-  # color:
-  #   textColor:
-  #   secondaryTextColor:
-  #   backgroundColor:
-  #   secondaryBackgroundColor:
-  #   primaryColor:
-  #   secondaryColor:
-
-  #   darkmode:
-  #     textColor:
-  #     secondaryTextColor:
-  #     backgroundColor:
-  #     secondaryBackgroundColor:
-  #     primaryColor:
-  #     secondaryColor:
+  color:
+    textColor: '#343a40'
+    secondaryTextColor: '#6c757d'
+    backgroundColor: '#eaedf0'
+    secondaryBackgroundColor: '#64ffda1a'
+    primaryColor: '#4494FB'
+    secondaryColor: '#f8f9fa'
+    employerColor: 'white'
+    darkmode:
+      textColor:
+      secondaryTextColor:
+      backgroundColor:
+      secondaryBackgroundColor:
+      primaryColor: '#E88507'
+      secondaryColor:
+      employerColor: 'white'
 
   # If you want to customize the menu, you can change it here
   navbar:
@@ -110,12 +114,6 @@ params:
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
-    button:
-      enable: false
-      name: "Resume"
-      url: "#"
-      download: true
-      newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
@@ -129,14 +127,16 @@ params:
     title: "About Me"
     image: "/images/Dimitri_Lesy.jpeg"
     content: |-
-      I'm a [Penetration Tester](https://en.wikipedia.org/wiki/Penetration_test) living in Austria 🇦🇹 (the one with the schnitzels, not the kangaroos).
-
-      This blog serves as a platform for me to publish security advisories and tech-related stuff I think might help others.
+      I'm a Belgian 🇧🇪 [Penetration Tester](https://en.wikipedia.org/wiki/Penetration_test) living in Austria 🇦🇹🏔️ (the one with the schnitzels, not the kangaroos).
+      This blog serves as a platform for me to publish security advisories and tech-related stuff I think might help others.<br><br>
     skills:
-      enable: false
-      title: "Here are a few technologies I've been working with recently:"
+      enable: true
+      title: "Here are a few areas I've been looking into recently:"
       items:
-        - "HTML"
+        - "Identity Providers"
+        - "Energy Management Systems"
+        - "Active Directory"
+        - "Software Distribution Solutions"
 
   # Experience
   experience:
@@ -322,6 +322,7 @@ params:
     copyright: "All rights reserved"
     pageNotFound: "Page not found"
     emailText: "Check out this site"
+    support: "Support Me"
 
   datesFormat:
     article: "Jan 2, 2006"

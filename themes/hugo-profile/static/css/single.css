@@ -277,6 +277,12 @@
     color: var(--primary-color);
 }
 
+/* Kofi */
+
+#single aside.kofi a{
+    background-color: var(--primary-color) !important;
+}
+
 /* Top scroll */
 
 #single #topScroll {
