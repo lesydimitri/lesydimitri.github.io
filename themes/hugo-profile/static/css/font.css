@@ -1,20 +1,4 @@
-
-/* Default font for body */
 body {
-    font-family: "Roboto", sans-serif !important;
-}
-
-/* secondary font */
-.secondary-font, #secondary-font {
-    font-family: "Roboto", serif;
-}
-
-/* primary font */
-.primary-font, #primary-font {
-    font-family: "Roboto", sans-serif;
-}
-
-/* Default font */
-.default-font, #default-font {
-    font-family: "Roboto", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                 Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
 }
