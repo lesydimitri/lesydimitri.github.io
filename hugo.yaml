@@ -17,10 +17,10 @@ outputs:
     - "HTML"
     - "RSS"
 
-Paginate: 3
+pagination:
+  pagerSize: 3
 enableRobotsTXT: true
-# disqusShortname: your-disqus-shortname
-googleAnalytics: G-T2P2G7M0YK
+#googleAnalytics: G-T2P2G7M0YK
 
 markup:
   goldmark:
@@ -288,7 +288,7 @@ params:
     # title: "Custom Name"
     content: Looking to connect?
     btnName: Hit me up!
-    btnLink: mailto:lesy.dimitri@gmail.com
+    btnLink: mailto:dimitri@codingkoala.eu
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'

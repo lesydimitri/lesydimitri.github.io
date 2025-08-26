@@ -2,14 +2,11 @@
 title: Tangro BWF Multiple Vulnerabilties
 date: 2022-05-16 21:00:00 +0200
 categories: [Security Advisories]
-author: Dimitri Lesy
+author: "Dimitri Lesy & Tobias Györfi"
 image: /posts/Tangro-BWF-Vulnerabilities/board.jpg
 tags: [tangro, bwf, jwt, upload, idor, session, download]
 description: Security Advisory
 ---
-
-Together with Tobias Györfi, I tested the software Tangro BWF for a client in 2020.
-This is a repost of the security advisories that were originally posted on the blog of my former employer *Thinking Objects GmbH*.
 
 | Key | Value |
 |---|---|
