@@ -20,7 +20,6 @@ outputs:
 pagination:
   pagerSize: 3
 enableRobotsTXT: true
-#googleAnalytics: G-T2P2G7M0YK
 
 markup:
   goldmark:
@@ -118,8 +117,6 @@ params:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://github.com/lesydimitri
-        - icon: fab fa-x-twitter
-          url: https://twitter.com/_CodingKoala_
 
   # About
   about:
